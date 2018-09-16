@@ -23,13 +23,13 @@ AWW
                                         <a href="#"><span class="lnr lnr-heart"></span></a>
                                         <a href="#"><span class="lnr lnr-layers"></span></a>
                                         <a href="#"><span class="lnr lnr-cart"></span></a>
-                                        <a href="#" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-frame-expand"></span></a>
+                                        <a href="{{ url('/detail/'.$popular[$i]->id.'-'.str_replace(' ', '-',$popular[$i]->original_title)) }}"><span class="lnr lnr-frame-expand"></span></a>
                                     </div>
                               </div>
                           </div>
                           <div class="price">
                                 <h5>{{$popular[$i]->original_title}}</h5>
-                                <h3>{{$popular[$i]->vote_average</h3>
+                                <h3>{{$popular[$i]->vote_average}}</h3>
                            </div>                         
                         </div>
 						@endfor						
