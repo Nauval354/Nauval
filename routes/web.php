@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',['getPopular','uses'=> 'ShopController@getpopular']);
 
 Route::get('detail', function () {
     return view('detail');
